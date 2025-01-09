@@ -31,6 +31,32 @@
 			},
 			{
 				"inputs": [],
+				"name": "changeBooleanFlag",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "displayPrivateIsFlag",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "displayPrivateVariable",
 				"outputs": [
 					{
@@ -90,11 +116,11 @@
 	},
 	"sources": {
 		"04 SamrtConttractBasic/SimpleVoting.sol": {
-			"keccak256": "0x6242202d0d4ac0a8e600a83f224ad3b65e530366d695edf51430ef0edee0b5a4",
+			"keccak256": "0x0b6d257ef4abc283e72140a0e2f93384a529ff2a103abe9acc62dd19b0b57697",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7dc7d17c5b5cccaf11af4794a9bfd03c85c1b5c5871292fe9b16128ff209859d",
-				"dweb:/ipfs/Qma2ys9Lngxv9GEq1RkTyRkJQkbKmyZBN2yXeptfEkEPvm"
+				"bzz-raw://49b1e864df796e6f121bb46e14bf07c64e820ad80a6899e56623747d2d6859ce",
+				"dweb:/ipfs/QmcvX1B7M3jkMbxDGcF95TawsLJ7MWD4uJq9hG7mZUsvMn"
 			]
 		}
 	},
