@@ -3,6 +3,7 @@
 pragma solidity =0.8.26;
 
 contract SimpleVoting {
+    
     uint256 private _voteCandidate = 5;
     bool private _isFlag = false;
 
@@ -33,5 +34,9 @@ contract SimpleVoting {
     }
     function displayPrivateIsFlag()public view returns (bool){
         return _isFlag;
+    }
+
+    function vote (uint256 amount) public {
+    
     }
 }

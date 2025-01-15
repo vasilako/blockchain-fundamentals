@@ -86,6 +86,19 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -116,11 +129,11 @@
 	},
 	"sources": {
 		"04 SamrtConttractBasic/SimpleVoting.sol": {
-			"keccak256": "0x0b6d257ef4abc283e72140a0e2f93384a529ff2a103abe9acc62dd19b0b57697",
+			"keccak256": "0xa0cff640886c2b7213431183dcae6ecb3983e80f2c8ac1ec54443c5306feb06d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49b1e864df796e6f121bb46e14bf07c64e820ad80a6899e56623747d2d6859ce",
-				"dweb:/ipfs/QmcvX1B7M3jkMbxDGcF95TawsLJ7MWD4uJq9hG7mZUsvMn"
+				"bzz-raw://c9e57e76d71e432441946f425377f5fad0a2f59fcbfa44711f221f5784afab9d",
+				"dweb:/ipfs/QmPmx29K5pWBNv4Bdgc7eyAneQ3GyAb49K4TRoFKgf2rYf"
 			]
 		}
 	},
