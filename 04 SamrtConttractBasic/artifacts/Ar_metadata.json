@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"04 SamrtConttractBasic/ArithmeticCalculator.sol": "Name"
+			"04 SamrtConttractBasic/ArithmeticCalculator.sol": "Ar"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"04 SamrtConttractBasic/ArithmeticCalculator.sol": {
-			"keccak256": "0x8ee4806bf8e5f32e1cb4b9babcd307ba163746210aea6f37173ed912d8e4a152",
+			"keccak256": "0xdae62993a6bdce76d602e709017c395228ff6ba9dcec15a99c23dfb3c86c0535",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eb57ce9980226c7e9eac0fddafa20df3fb1132fe0ad84937a0c73cb738507895",
-				"dweb:/ipfs/QmQ9WWWXGb8MFwum69fEfy8ec1D8Aqs7BroUWGXNhcezL8"
+				"bzz-raw://cf50ff3a9e64933d21432cdb0c02a4ff47a00c20d9323e7dc75bd05e4d4d6764",
+				"dweb:/ipfs/QmRvKUK9hawDwrzbjrTKQTo5142HxxRBpNCRirjw4y74wF"
 			]
 		}
 	},

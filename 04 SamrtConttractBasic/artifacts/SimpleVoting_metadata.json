@@ -9,90 +9,72 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					}
-				],
-				"name": "NamedArguments",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "b",
+						"name": "value",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "c",
+						"name": "length",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "changeBooleanFlag",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "displayPrivateIsFlag",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "displayPrivateVariable",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "StringsInsufficientHexLength",
+				"type": "error"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "raison",
+						"type": "string"
 					}
 				],
-				"name": "test",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
+				"name": "customError",
+				"type": "error"
 			},
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "candidate",
+						"name": "voter",
 						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum SimpleVoting.ListCandidates",
+						"name": "candidate",
+						"type": "uint8"
+					}
+				],
+				"name": "Vote",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum SimpleVoting.ListCandidates",
+						"name": "candidate_",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ageVoter_",
+						"type": "uint256"
 					}
 				],
 				"name": "vote",
@@ -102,6 +84,13 @@
 			}
 		],
 		"devdoc": {
+			"errors": {
+				"StringsInsufficientHexLength(uint256,uint256)": [
+					{
+						"details": "The `value` string doesn't fit in the specified `length`."
+					}
+				]
+			},
 			"kind": "dev",
 			"methods": {},
 			"version": 1
@@ -114,7 +103,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"04 SamrtConttractBasic/SimpleVoting.sol": "SimpleVoting"
+			"04 SamrtConttractBasic/SimpleVoting1.sol": "SimpleVoting"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -128,12 +117,52 @@
 		"remappings": []
 	},
 	"sources": {
-		"04 SamrtConttractBasic/SimpleVoting.sol": {
-			"keccak256": "0xbb98c6936daf5b5617a2a3282eeb6ae94be337981d39dde45a8720e0c53b2a26",
+		"04 SamrtConttractBasic/SimpleVoting1.sol": {
+			"keccak256": "0xf124dd87d021ae0776d75a60225e0d87dbdd91c4b6a82597bc1e2917f68cf243",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6de86fcb588d53961f00c4156b1e037892c17043d8ac89260565d8170d3f2db2",
-				"dweb:/ipfs/QmTkQAEsrMnXQv5beDDUQSyuDWAbhHBXaGKptsDGsgewwk"
+				"bzz-raw://33dcd1760f5ca6b6dc14377ed2de32a14b393eb48bb6ed87b7004166a680084c",
+				"dweb:/ipfs/QmX17ThDY6y28r2UnLvZHxRPNpqy62zGnC5vDFoTiVqY9k"
+			]
+		},
+		"@openzeppelin/contracts/utils/Panic.sol": {
+			"keccak256": "0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a",
+				"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG"
+			]
+		},
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0x44f87e91783e88415bde66f1a63f6c7f0076f2d511548820407d5c95643ac56c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://13a51bc2b23827744dcf5bad10c69e72528cf015a6fe48c93632cdb2c0eb1251",
+				"dweb:/ipfs/QmZwPA47Yqgje1qtkdEFEja8ntTahMStYzKf5q3JRnaR7d"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/Math.sol": {
+			"keccak256": "0xa00be322d7db5786750ce0ac7e2f5b633ac30a5ed5fa1ced1e74acfc19acecea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c84e822f87cbdc4082533b626667b6928715bb2b1e8e7eb96954cebb9e38c8d",
+				"dweb:/ipfs/QmZmy9dgxLTerBAQDuuHqbL6EpgRxddqgv5KmwpXYVbKz1"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8",
+				"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0xb1970fac7b64e6c09611e6691791e848d5e3fe410fa5899e7df2e0afd77a99e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db5fbb3dddd8b7047465b62575d96231ba8a2774d37fb4737fbf23340fabbb03",
+				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
 			]
 		}
 	},
