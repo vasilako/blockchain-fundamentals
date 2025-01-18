@@ -5,6 +5,8 @@ pragma solidity =0.8.26;
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract SimpleVoting {
+    error customError(string raison);
+
     mapping(address => bool) private voters;
     mapping(address => uint256) private  candidatesResults;
     address private  voter;
@@ -22,8 +24,11 @@ contract SimpleVoting {
 
     event Vote(address indexed voter, ListCandidates candidate);
 
-    function vote(ListCandidates candidate_) public {
+    function vote(ListCandidates candidate_, uint ageVoter_) public {
         voter = msg.sender;
+        if (ageVoter_ <18){
+            revert customError("You need to be older than 18");
+        }
         require(!voters[msg.sender], "You have already voted");
         require(voter != _owner, "Owner cant vote");
         require(voterCount <= 5, "Voting finished");
