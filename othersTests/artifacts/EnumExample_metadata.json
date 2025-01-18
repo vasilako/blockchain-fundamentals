@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"othersTests/EnumTest.sol": {
-			"keccak256": "0x01e12f430c516feedd23b519a4fddf8bce2264124fa115d3785bbb63933c021c",
+			"keccak256": "0xedb621f64fa8d3b737bbc5cf790752165b911c9c4a1ffe2610be2d4db9e1cba6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://be86402bfc128e11704a7a4671714fe5df5b69562a174e6ce38863a657ee694d",
-				"dweb:/ipfs/QmcXPPFKXqk3rDVpSL6gF369Hb5cvGb2WLsD4skic3yeFw"
+				"bzz-raw://324287804b02b91994c3e6e478c79b70dd8dc4a37b64bc5caa89f4a5d33862a4",
+				"dweb:/ipfs/QmcgcHKA4ok2mDJXNiFQidLWKogZQCmFpBH7Yznm6MpqBa"
 			]
 		}
 	},

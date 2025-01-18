@@ -86,19 +86,6 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "candidate",
-						"type": "address"
-					}
-				],
-				"name": "vote",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -114,7 +101,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"04 SamrtConttractBasic/SimpleVoting.sol": "SimpleVoting"
+			"othersTests/workWithVariables.sol": "PlayWithVariables"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -128,12 +115,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"04 SamrtConttractBasic/SimpleVoting.sol": {
-			"keccak256": "0xbb98c6936daf5b5617a2a3282eeb6ae94be337981d39dde45a8720e0c53b2a26",
+		"othersTests/workWithVariables.sol": {
+			"keccak256": "0x5174ede523d17eb1a1de91a244f89f45a6d89a66b1d3549c3795c129c4fcf0cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6de86fcb588d53961f00c4156b1e037892c17043d8ac89260565d8170d3f2db2",
-				"dweb:/ipfs/QmTkQAEsrMnXQv5beDDUQSyuDWAbhHBXaGKptsDGsgewwk"
+				"bzz-raw://bf10126cb8125ff261be736182544b771d72dc1ee5d7443e96860352355a6a23",
+				"dweb:/ipfs/QmfYGsk7oG6BNyG6dnFxiUzB5ETQ4qTzYcsmJft1t9Eunx"
 			]
 		}
 	},

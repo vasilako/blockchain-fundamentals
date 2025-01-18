@@ -8,7 +8,7 @@ contract EnumExample {
         Pending, // 0
         Approved, // 1
         Rejected, // 2
-        MyTesting // 6
+        MyTesting // 3
     }
 
     // Деклариране на променлива от тип "Status"
@@ -29,6 +29,6 @@ contract EnumExample {
         } else if (status == Status.MyTesting) {
             return "My Testing";
         }    
-        return "";
+        return "your c";
     }
 }
