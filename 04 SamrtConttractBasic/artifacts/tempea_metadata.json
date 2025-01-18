@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"04 SamrtConttractBasic/TemperatureConversion.sol": "tempea"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"04 SamrtConttractBasic/TemperatureConversion.sol": {
+			"keccak256": "0x177216f3ed9d0deacba0ab1e9c5613cb58999bf1450e220570fd0ea9863b16fe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7262d1ed03ec1d83637e80ab743be23312bfb3bbedfe09a250459d74b6af710",
+				"dweb:/ipfs/QmbRGwh5ozLnodN6d3UrjruvW6RNYo5ZmdcPupTc5vaZim"
+			]
+		}
+	},
+	"version": 1
+}
