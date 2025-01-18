@@ -6,16 +6,15 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract SimpleVoting {
     mapping(address => bool) private voters;
-    mapping(address => uint256) public candidatesResults;
+    mapping(address => uint256) private  candidatesResults;
     address private  voter;
     address private  _owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
     address private  _cadidateOne = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2;
     address private  _cadidateTwo = 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db;
-    address[2] public allCandidates = [_cadidateOne, _cadidateTwo];
+    address[2] private  allCandidates = [_cadidateOne, _cadidateTwo];
     address[] private  allVoters;
     uint256 private  voterCount;
 
-    string public checkEnunValue;
     enum ListCandidates {
         _cadidateOne,
         _cadidateTwo
