@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "principal_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interestRate_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "years_",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateInteresCompound",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"04 SamrtConttractBasic/CompoundInterestCalculator.sol": "CompoundInterestCalculator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"04 SamrtConttractBasic/CompoundInterestCalculator.sol": {
+			"keccak256": "0xbfacb4ca236e9b5b7b87e340139cf3a3fc0d9ced4a5f0bc53f6105e1cd1d14c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c6311b74189b8b10b347e70b55bdd44e1fac7a44eee1fb9f841afffb5576b9b",
+				"dweb:/ipfs/QmNYohJcD8xtwMwryXhwDN1bAvfzS9wMye5C7fJpJD5dU1"
+			]
+		}
+	},
+	"version": 1
+}

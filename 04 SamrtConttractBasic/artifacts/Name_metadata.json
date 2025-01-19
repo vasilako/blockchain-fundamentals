@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"04 SamrtConttractBasic/ArithmeticCalculator.sol": "Name"
+			"04 SamrtConttractBasic/CompoundInterestCalculator.sol": "Name"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -32,12 +32,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"04 SamrtConttractBasic/ArithmeticCalculator.sol": {
-			"keccak256": "0x8ee4806bf8e5f32e1cb4b9babcd307ba163746210aea6f37173ed912d8e4a152",
-			"license": "MIT",
+		"04 SamrtConttractBasic/CompoundInterestCalculator.sol": {
+			"keccak256": "0x55cb6705c621f82b9ff397c6e1a3ca5ed7b74d3cbdf83469d2d3f0792d6b35db",
 			"urls": [
-				"bzz-raw://eb57ce9980226c7e9eac0fddafa20df3fb1132fe0ad84937a0c73cb738507895",
-				"dweb:/ipfs/QmQ9WWWXGb8MFwum69fEfy8ec1D8Aqs7BroUWGXNhcezL8"
+				"bzz-raw://34950d7460458ed811dea2a162a12daed0d88ef6b141452c034ea3c0b9356ef0",
+				"dweb:/ipfs/Qmdpuub3aj6n4PDguHrBindXtiTFSbiunJ8Z9S2WAymmyh"
 			]
 		}
 	},
