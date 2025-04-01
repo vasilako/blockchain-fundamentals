@@ -8,7 +8,7 @@ contract loantCalculator {
 
     function calculateTotalPayable(uint256 interestRate_, uint256 loanPeriod_)
         public
-      payable 
+        payable 
         returns (uint256)
     {
         uint256 interestRate = interestRate_;
@@ -18,11 +18,13 @@ contract loantCalculator {
             interestRate >= 0 || interestRate <= 100,
             "Interest rate can be between 1 and 100"
         );
-        require(loanPeriod <= 365, "Loan Period can be at least 365 days");
-        uint256 loanPeriodInYears = loanPeriod / 365;
+
+    
+        require(loanPeriod >= 1, "Loan Period must be less than 1");
+
         totalAmountToPay =
             loanAmount +
-            ((loanAmount * interestRate * loanPeriodInYears) / 100);
+            ((loanAmount * interestRate * loanPeriod) / 100);
 
         return totalAmountToPay;
     }
